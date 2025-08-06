@@ -37,7 +37,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:8081/api/contact/contact', formData);
+            const response = await axios.post('https://backend-lms-africa.vercel.app/api/contact/contact', formData);
 
             if (response.status === 200) {
                 setToastMessage('Your message has been sent successfully! We will get back to you soon.');

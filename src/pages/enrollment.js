@@ -56,7 +56,7 @@ const Enrollment = () => {
 
     try {
       if (method === 'Flutterwave') {
-        const res = await axios.post('http://localhost:8081/api/flutterwave/payment', {
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/flutterwave/payment', {
           name,
           email,
           amount: amount,
@@ -73,7 +73,7 @@ const Enrollment = () => {
         // For a full client-side flow, you'd need a way to detect payment completion
         // after coming back from the redirect.
       } else if (method === 'MPesa') {
-        const res = await axios.post('http://localhost:8081/api/mpesa/payment', {
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/mpesa/payment', {
           phone,
           amount: amount,
           AccountReference: course.title, 
@@ -85,7 +85,7 @@ const Enrollment = () => {
         // For this frontend-only simulation, we'll navigate to dashboard after a delay.
         handleSuccessfulEnrollment(); // Navigate after initiating STK push
       } else if (method === 'Stripe') {
-        const res = await axios.post('http://localhost:8081/api/stripe/payment', {
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/stripe/payment', {
           name,
           email,
           amount: amount,

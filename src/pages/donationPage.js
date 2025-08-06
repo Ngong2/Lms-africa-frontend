@@ -30,17 +30,17 @@ const DonationPage = () => {
 
     try {
       if (method === 'Flutterwave') {
-        const res = await axios.post('http://localhost:8081/api/flutterwave/payment', { name, email, amount });
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/flutterwave/payment', { name, email, amount });
         console.log(res);
         window.location.href = res.data.paymentLink;
 
       } else if (method === 'MPesa') {
-        const res = await axios.post('http://localhost:8081/api/mpesa/payment', { phone, amount });
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/mpesa/payment', { phone, amount });
         console.log(res.data.CustomerMessage);
         setMessage(res.data.CustomerMessage || "Something went wrong please try again");
 
       } else if (method === 'Stripe') {
-        const res = await axios.post('http://localhost:8081/api/stripe/payment', { name, email, amount });
+        const res = await axios.post('https://backend-lms-africa.vercel.app/api/stripe/payment', { name, email, amount });
         window.location.href = res.data.url;
 
       } else if (method === 'PayPal') {
