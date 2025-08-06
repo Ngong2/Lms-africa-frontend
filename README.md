@@ -59,7 +59,7 @@ LMS-Africa is built to bridge the digital skills gap across Africa by providing 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/lms-africa.git
+   git clone https://github.com/Ngong2/Lms-africa-frontend.git
    cd lms-africa/lms-africa
    ```
 
