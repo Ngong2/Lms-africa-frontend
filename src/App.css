@@ -1,0 +1,39 @@
+/* Courses.css */
+.card-img-top-placeholder {
+    background-color: #f0f8ff; /* A light, soft color */
+    border-bottom: 1px solid #e9ecef; /* Subtle border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    border-radius: 8px 8px 0 0; /* Match card border-radius */
+}
+
+.card-img-top-placeholder i {
+    color: #007bff; /* Primary blue for the icon */
+    font-size: 3rem; /* Size of the icon */
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body .card-text {
+    min-height: 4.5em; /* Ensure consistent height for descriptions */
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.card-footer {
+    /* Add some padding to separate from card body */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
