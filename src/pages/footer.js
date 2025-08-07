@@ -23,7 +23,7 @@ export const Footer = () => {
     setIsSubmitting(true); // Disable button during submission
 
     try {
-      const response = await fetch('https://backend-lms-africa.vercel.app/api/contact/newsletter', {
+      const response = await fetch('https://backend-ilw9.onrender.com/api/contact/newsletter', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

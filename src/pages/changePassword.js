@@ -22,7 +22,7 @@ const ChangePassword = () => {
 
     try {
       console.log("email and otp: ", email, otp);
-      const response = await fetch('https://backend-lms-africa.vercel.app/api/users/change-password', {
+      const response = await fetch('https://backend-ilw9.onrender.com/api/users/change-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

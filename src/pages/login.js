@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const res = await axios.post('https://backend-lms-africa.vercel.app/api/users/login', inputs);
+      const res = await axios.post('https://backend-ilw9.onrender.com/api/users/login', inputs);
 
       localStorage.setItem('token', res.data.data.token);
       localStorage.setItem('userType', res.data.data.user.userType);
@@ -77,7 +77,7 @@ const Login = () => {
     setForgotError("");
 
     try {
-      const res = await axios.post('https://backend-lms-africa.vercel.app/api/users/forgot-password', { email: forgotEmail });
+      const res = await axios.post('https://backend-ilw9.onrender.com/api/users/forgot-password', { email: forgotEmail });
       setForgotMessage(res.data.message);
     } catch (err) {
       setForgotError(err.response?.data?.message || "Something went wrong. Try again.");

@@ -84,7 +84,7 @@ const Register = () => {
 
     try {
       const { confirm, ...userData } = inputs;
-      const res = await axios.post('https://backend-lms-africa.vercel.app/api/users/register', userData);
+      const res = await axios.post('https://backend-ilw9.onrender.com/api/users/register', userData);
 
       if (res.data.status === "00") {
         toast.success("Registration successful!");
