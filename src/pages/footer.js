@@ -91,7 +91,7 @@ export const Footer = () => {
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white border-0 ps-0">
                 <FaPhone className="me-2" />
-                +254 700 123 456
+                +254 110667278
               </ListGroup.Item>
               <ListGroup.Item className="bg-dark text-white border-0 ps-0">
                 <FaEnvelope className="me-2" />
